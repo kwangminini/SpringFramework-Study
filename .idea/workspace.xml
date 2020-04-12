@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="205d4d10-154a-4ca1-a113-fffefc6328c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/Member.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,6 +27,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1aB6jCpMGmbhFvCQzi5nWMAUHa7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,18 +44,53 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.Main" />
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="kr.co.fastcampus.cli" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kr.co.fastcampus" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.web.Main" />
       <module name="springFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kr.co.fastcampus.*" />
+          <option name="PATTERN" value="kr.co.fastcampus.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.Main" />
+      <module name="springFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kr.co.fastcampus.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.Main" />
+      <module name="springFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kr.co.fastcampus.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -86,41 +131,65 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="496" y="208" width="814" height="669" key="#Project_Structure" timestamp="1586276690802">
+    <state x="2323" y="211" width="814" height="669" key="#Project_Structure" timestamp="1586700729299">
+      <screen x="1792" y="23" width="1920" height="1057" />
+    </state>
+    <state x="496" y="208" width="814" height="669" key="#Project_Structure/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586544071834" />
+    <state x="2323" y="211" key="#Project_Structure/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586700729299" />
+    <state x="2352" y="217" key="#Servers" timestamp="1586697877179">
+      <screen x="1792" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2352" y="217" key="#Servers/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586697877179" />
+    <state x="2216" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586701678540">
+      <screen x="1792" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2216" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586701678540" />
+    <state x="2552" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1586702067485">
+      <screen x="1792" y="23" width="1920" height="1057" />
+    </state>
+    <state x="709" y="225" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586617342424" />
+    <state x="2552" y="228" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702067485" />
+    <state x="607" y="125" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1586542734579">
       <screen x="0" y="23" width="1792" height="1039" />
     </state>
-    <state x="496" y="208" width="814" height="669" key="#Project_Structure/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586276690802" />
-    <state x="709" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1586362524371">
-      <screen x="0" y="23" width="1792" height="1039" />
-    </state>
-    <state x="709" y="225" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586362524371" />
+    <state x="607" y="125" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586542734579" />
     <state x="634" y="296" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1586196973799">
       <screen x="0" y="23" width="1792" height="1039" />
     </state>
     <state x="634" y="296" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586196973799" />
-    <state width="1750" height="265" key="GridCell.Tab.0.bottom" timestamp="1586362137406">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state x="2499" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586701271456">
+      <screen x="1792" y="23" width="1920" height="1057" />
     </state>
-    <state width="1750" height="265" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586362137406" />
-    <state width="1750" height="265" key="GridCell.Tab.0.center" timestamp="1586362137405">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state x="2499" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586701271456" />
+    <state width="1878" height="294" key="GridCell.Tab.0.bottom" timestamp="1586702146619">
+      <screen x="1792" y="23" width="1920" height="1057" />
     </state>
-    <state width="1750" height="265" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586362137405" />
-    <state width="1750" height="265" key="GridCell.Tab.0.left" timestamp="1586362137405">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="294" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586698659286" />
+    <state width="1878" height="294" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
+    <state width="1878" height="294" key="GridCell.Tab.0.center" timestamp="1586702146619">
+      <screen x="1792" y="23" width="1920" height="1057" />
     </state>
-    <state width="1750" height="265" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586362137405" />
-    <state width="1750" height="265" key="GridCell.Tab.0.right" timestamp="1586362137406">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="294" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586698659285" />
+    <state width="1878" height="294" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
+    <state width="1878" height="294" key="GridCell.Tab.0.left" timestamp="1586702146618">
+      <screen x="1792" y="23" width="1920" height="1057" />
     </state>
-    <state width="1750" height="265" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586362137406" />
-    <state x="384" y="124" key="SettingsEditor" timestamp="1586362005053">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="294" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586698659285" />
+    <state width="1878" height="294" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146618" />
+    <state width="1878" height="294" key="GridCell.Tab.0.right" timestamp="1586702146619">
+      <screen x="1792" y="23" width="1920" height="1057" />
     </state>
-    <state x="384" y="124" key="SettingsEditor/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586362005053" />
-    <state x="556" y="375" key="com.intellij.ide.util.TipDialog" timestamp="1586196777210">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="294" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586698659286" />
+    <state width="1878" height="294" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
+    <state x="2131" y="71" key="SettingsEditor" timestamp="1586700364698">
+      <screen x="1792" y="23" width="1920" height="1057" />
     </state>
-    <state x="556" y="375" key="com.intellij.ide.util.TipDialog/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586196777210" />
+    <state x="384" y="124" key="SettingsEditor/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586697085973" />
+    <state x="2131" y="71" key="SettingsEditor/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586700364698" />
+    <state x="2388" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1586700802382">
+      <screen x="1792" y="23" width="1920" height="1057" />
+    </state>
+    <state x="556" y="375" key="com.intellij.ide.util.TipDialog/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1586610568135" />
+    <state x="2388" y="381" key="com.intellij.ide.util.TipDialog/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586700802382" />
   </component>
 </project>
