@@ -9,6 +9,7 @@
     </appender>
 
 
+    <logger name = "org.springframework" level = "ERROR"/>
 
     <root level="trace">
         <appender-ref ref="STDOUT"/>
