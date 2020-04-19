@@ -2,14 +2,17 @@ package kr.co.fastcampus.cli;
 
 import lombok.extern.slf4j.Slf4j;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 
 @Slf4j
-public class Dao {
+public class Dao2 {
     private Connection connection;
 
-    public Dao(Connection connection) {
+    public Dao2(Connection connection) {
         this.connection = connection;
     }
 

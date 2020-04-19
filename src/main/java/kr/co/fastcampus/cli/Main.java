@@ -11,9 +11,13 @@ public class Main {
 
     public static void main(String[] args)  {
         logger.info("Hello world");
-
+        try {
+            Class.forName("org.h2.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         ApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
-        Dao dao = context.getBean(Dao.class);
-        dao.run();
+        Dao2 dao2 = context.getBean(Dao2.class);
+        dao2.run();
     }
 }
