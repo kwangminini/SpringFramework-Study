@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="205d4d10-154a-4ca1-a113-fffefc6328c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/fastcampus/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fastcampus/A.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,8 +61,11 @@
       <recent name="kr.co.fastcampus.cli" />
       <recent name="kr.co.fastcampus" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.BeanScopeTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.di.Main" />
       <module name="springFramework" />
@@ -145,10 +154,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BeanScopeTest" />
         <item itemvalue="JUnit.BeanScopeTest.testEquals" />
         <item itemvalue="JUnit.BeanScopeTest.testIdentity" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
@@ -210,35 +219,35 @@
       <screen x="1792" y="23" width="1920" height="1057" />
     </state>
     <state x="2499" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586701271456" />
-    <state width="1750" height="314" key="GridCell.Tab.0.bottom" timestamp="1588000486760">
+    <state width="1750" height="314" key="GridCell.Tab.0.bottom" timestamp="1588095872889">
       <screen x="0" y="23" width="1792" height="1039" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588000486760" />
+    <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872889" />
     <state width="1878" height="294" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418215" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650170" />
-    <state width="1750" height="314" key="GridCell.Tab.0.center" timestamp="1588000486759">
+    <state width="1750" height="314" key="GridCell.Tab.0.center" timestamp="1588095872888">
       <screen x="0" y="23" width="1792" height="1039" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.center/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588000486759" />
+    <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872888" />
     <state width="1878" height="294" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418214" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650169" />
-    <state width="1750" height="314" key="GridCell.Tab.0.left" timestamp="1588000486759">
+    <state width="1750" height="314" key="GridCell.Tab.0.left" timestamp="1588095872887">
       <screen x="0" y="23" width="1792" height="1039" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.left/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588000486759" />
+    <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872887" />
     <state width="1878" height="294" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146618" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418213" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650168" />
-    <state width="1750" height="314" key="GridCell.Tab.0.right" timestamp="1588000486759">
+    <state width="1750" height="314" key="GridCell.Tab.0.right" timestamp="1588095872889">
       <screen x="0" y="23" width="1792" height="1039" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.right/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588000486759" />
+    <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872889" />
     <state width="1878" height="294" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418214" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650169" />
@@ -269,13 +278,15 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java</url>
-          <line>11</line>
-          <properties class="kr.co.fastcampus.cli.Main" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

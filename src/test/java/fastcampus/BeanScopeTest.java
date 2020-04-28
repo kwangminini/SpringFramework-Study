@@ -1,9 +1,9 @@
 package fastcampus;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-
-import java.util.Objects;
 
 public class BeanScopeTest {
 //    @Test
@@ -27,26 +27,9 @@ public class BeanScopeTest {
     }
 }
 
+@EqualsAndHashCode
+@AllArgsConstructor
 class A{
     private int a1;
     private String a2;
-
-    public A(int a1, String a2) {
-        this.a1 = a1;
-        this.a2 = a2;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true; //두 객체가 동등성을 가지면 true
-        if (!(o instanceof A)) return false; //타입 비교
-        A a = (A) o; //object -> A로 타입 변환
-        return a1 == a.a1 && //integer값이 같은지
-                Objects.equals(a2, a.a2); //string값이 같은지
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(a1, a2);
-    }
 }
