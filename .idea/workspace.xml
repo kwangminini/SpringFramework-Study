@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="205d4d10-154a-4ca1-a113-fffefc6328c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bean.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/A.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/ConnectionFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/ConnectionFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/co/fastcampus/cli/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/fastcampus/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/fastcampus/A.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,12 +69,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.di.Main" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.web.Main" />
       <module name="springFramework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kr.co.fastcampus.cli.di.*" />
+          <option name="PATTERN" value="kr.co.fastcampus.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.BeanScopeTest" />
         <item itemvalue="JUnit.BeanScopeTest.testEquals" />
         <item itemvalue="JUnit.BeanScopeTest.testIdentity" />
-        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -202,9 +205,10 @@
       <screen x="1792" y="23" width="1920" height="1057" />
     </state>
     <state x="2216" y="213" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586701678540" />
-    <state x="709" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1588000410271">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state x="709" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1588214772416">
+      <screen x="0" y="23" width="1792" height="1032" />
     </state>
+    <state x="709" y="224" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588214772416" />
     <state x="709" y="225" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588000410271" />
     <state x="2552" y="228" key="#com.intellij.ide.util.MemberChooser/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702067485" />
     <state x="607" y="125" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1586542734579">
@@ -219,38 +223,58 @@
       <screen x="1792" y="23" width="1920" height="1057" />
     </state>
     <state x="2499" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586701271456" />
-    <state width="1750" height="314" key="GridCell.Tab.0.bottom" timestamp="1588095872889">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="328" key="GridCell.Tab.0.bottom" timestamp="1588215047299">
+      <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
+    <state width="1750" height="328" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047299" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872889" />
     <state width="1878" height="294" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418215" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650170" />
-    <state width="1750" height="314" key="GridCell.Tab.0.center" timestamp="1588095872888">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="328" key="GridCell.Tab.0.center" timestamp="1588215047298">
+      <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.center/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
+    <state width="1750" height="328" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047298" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872888" />
     <state width="1878" height="294" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418214" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650169" />
-    <state width="1750" height="314" key="GridCell.Tab.0.left" timestamp="1588095872887">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="328" key="GridCell.Tab.0.left" timestamp="1588215047297">
+      <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.left/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
+    <state width="1750" height="328" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047297" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872887" />
     <state width="1878" height="294" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146618" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418213" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650168" />
-    <state width="1750" height="314" key="GridCell.Tab.0.right" timestamp="1588095872889">
-      <screen x="0" y="23" width="1792" height="1039" />
+    <state width="1750" height="328" key="GridCell.Tab.0.right" timestamp="1588215047298">
+      <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.right/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
+    <state width="1750" height="328" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047298" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872889" />
     <state width="1878" height="294" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418214" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650169" />
+    <state width="1750" height="328" key="GridCell.Tab.1.bottom" timestamp="1588215047300">
+      <screen x="0" y="23" width="1792" height="1032" />
+    </state>
+    <state width="1750" height="328" key="GridCell.Tab.1.bottom/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047300" />
+    <state width="1750" height="328" key="GridCell.Tab.1.center" timestamp="1588215047299">
+      <screen x="0" y="23" width="1792" height="1032" />
+    </state>
+    <state width="1750" height="328" key="GridCell.Tab.1.center/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047299" />
+    <state width="1750" height="328" key="GridCell.Tab.1.left" timestamp="1588215047299">
+      <screen x="0" y="23" width="1792" height="1032" />
+    </state>
+    <state width="1750" height="328" key="GridCell.Tab.1.left/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047299" />
+    <state width="1750" height="328" key="GridCell.Tab.1.right" timestamp="1588215047299">
+      <screen x="0" y="23" width="1792" height="1032" />
+    </state>
+    <state width="1750" height="328" key="GridCell.Tab.1.right/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1588215047299" />
     <state x="384" y="124" key="SettingsEditor" timestamp="1587292680195">
       <screen x="0" y="23" width="1792" height="1039" />
     </state>
@@ -277,6 +301,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/A.java</url>
+          <line>13</line>
+          <properties class="kr.co.fastcampus.cli.A" method="init">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/fastcampus/BeanScopeTest.java</url>
