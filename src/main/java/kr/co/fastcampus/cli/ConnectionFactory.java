@@ -2,6 +2,7 @@ package kr.co.fastcampus.cli;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.DisposableBean;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +10,7 @@ import java.sql.SQLException;
 
 @Getter
 @Slf4j
-public class ConnectionFactory  {
+public class ConnectionFactory implements DisposableBean {
     private String driverClass;
     private String url;
     private String user;
@@ -43,4 +44,5 @@ public class ConnectionFactory  {
             this.connection.close();
         }
     }
+
 }
