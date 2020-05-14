@@ -2,13 +2,14 @@ package kr.co.fastcampus.cli;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Slf4j
+@Component
 public class A {
     //private B b;
 
@@ -31,14 +32,19 @@ public class A {
 //        log.info(""+b);
 //    }
 
-    @Autowired @Qualifier("b2") private B b;
-    //@Resource(name = "b1") private B b;
+    //@Autowired @Qualifier("b2") private B b;
+   // @Resource(name = "b1") private B b;
+    @Autowired private B b;
     @Autowired private ApplicationContext context;
-    @Value("${catalog.name}") String catalogName;
+    //@Value("${catalog.name}") String catalogName;
 
     @PostConstruct
     void init(){
-        log.info(""+context);
+        log.error("A post construct");
     }
 
+    @PreDestroy
+    void destroy(){
+
+    }
 }
