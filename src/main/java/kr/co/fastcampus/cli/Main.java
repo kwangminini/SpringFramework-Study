@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args)  {
         log.info("hello");
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(Main.class);
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(Main.class); //class넣는게 실수를 줄여준다.
         //Dao2 dao2 = context.getBean(Dao2.class);
         B b = context.getBean(B.class);
         log.info(""+b);
