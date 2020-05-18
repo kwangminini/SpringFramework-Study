@@ -10,6 +10,7 @@ import javax.annotation.PreDestroy;
 
 @Slf4j
 @Component
+//@Named("a")
 public class A {
     //private B b;
 
