@@ -5,9 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 @Slf4j
 @Component
 //@Named("a")
@@ -36,15 +33,20 @@ public class A {
     //@Autowired @Qualifier("b2") private B b;
    // @Resource(name = "b1") private B b;
     @Autowired private B b;
+
+    public A(B b) {
+        this.b = b;
+    }
+
     @Autowired private ApplicationContext context;
     //@Value("${catalog.name}") String catalogName;
 
-    @PostConstruct
+    //@PostConstruct
     void init(){
         log.error("A post construct");
     }
 
-    @PreDestroy
+    //@PreDestroy
     void destroy(){
 
     }

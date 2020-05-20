@@ -1,7 +1,6 @@
 package kr.co.fastcampus.cli;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -16,8 +15,9 @@ public class Main {
     public static void main(String[] args)  {
         log.info("hello");
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(Main.class); //class넣는게 실수를 줄여준다.
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Main.class); //class넣는게 실수를 줄여준다.
         //Dao2 dao2 = context.getBean(Dao2.class);
+        context.scan("kr.co.fastcampus.cli");
         B b = context.getBean(B.class);
         log.info(""+b);
         //dao2.run();

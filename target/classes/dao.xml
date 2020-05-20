@@ -9,6 +9,7 @@
 
     <context:annotation-config/>
 
+<!--    <context:component-scan base-package="kr.co.fastcampus.cli"/>-->
     <bean id="connectionFactory" class="kr.co.fastcampus.cli.ConnectionFactory" init-method="init" destroy-method="destroy">
         <constructor-arg name="driverClass" value="org.h2.Driver" />
         <constructor-arg name="url" value="jdbc:h2:mem:test;MODE=MySQL;"/>
