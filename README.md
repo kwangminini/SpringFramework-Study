@@ -11,3 +11,4 @@
 * 1.9 Annotation-based Container Configuration
 * 1.10 Classpath Scanning and Managed Components
 * 1.11 Using JSR 330 Standard Annotations
+* 1.12 Java-based Container Configuration
