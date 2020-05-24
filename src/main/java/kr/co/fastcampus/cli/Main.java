@@ -14,7 +14,7 @@ public class Main {
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml"); //class넣는게 실수를 줄여준다.
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(AppDefaultConfig.class,AppDevConfig.class); //Configuration 설정
+        context.register(AppConfig.class,AppDefaultConfig.class,AppDevConfig.class); //Configuration 설정
         context.refresh();
 
         //Dao2 dao2 = context.getBean(Dao2.class);
