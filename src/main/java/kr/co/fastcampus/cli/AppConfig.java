@@ -36,7 +36,7 @@ public class AppConfig {
         return new A(b);
     }
 
-    @Bean
+    @Bean 
     public Connection connection(ConnectionFactory connectionFactory){
         return connectionFactory.getConnection();
     }
