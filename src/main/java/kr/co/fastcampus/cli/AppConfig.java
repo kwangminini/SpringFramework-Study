@@ -14,6 +14,7 @@ import java.sql.Connection;
 //@Profile("dev | default")
 @Profile({"dev", "default"})
 //@ComponentScan(basePackages = "kr.co.fastcampus.cli")
+//@PropertySource("classpath:application-${spring.profiles.active}.properties") 여기에 한번에 설
 public class AppConfig {
 //    @Bean
 //    //@Primary
@@ -36,7 +37,7 @@ public class AppConfig {
         return new A(b);
     }
 
-    @Bean 
+    @Bean
     public Connection connection(ConnectionFactory connectionFactory){
         return connectionFactory.getConnection();
     }
@@ -45,4 +46,14 @@ public class AppConfig {
     public Dao dao(Connection connection){
         return new Dao(connection);
     }
+
+    /*@Bean(initMethod = "init", destroyMethod = "destroy")
+    public ConnectionFactory connectionFactory(
+            @Value("${jdbc.driver-name}") String driverClass,
+            @Value("${jdbc.url}") String url,
+            @Value("${jdbc.username}") String username,
+            @Value("${jdbc.password}") String password
+    ){
+        return new ConnectionFactory(driverClass,url,username,password);
+    }*/
 }
