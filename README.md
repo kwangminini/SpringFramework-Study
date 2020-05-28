@@ -13,3 +13,9 @@
 * 1.11 Using JSR 330 Standard Annotations
 * 1.12 Java-based Container Configuration
 * 1.13 Environment Abstraction
+
+# 2.Resources
+* 2.2 The Resource Interface
+* 2.3 Built-in Resource Implementations
+* 2.4 The ResourceLoader
+* 2.5 The ResourceLoaderAware interface 
