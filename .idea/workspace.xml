@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="205d4d10-154a-4ca1-a113-fffefc6328c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/res/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/co/fastcampus/cli/res/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring.components" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.web.Main" />
       <module name="springFramework" />
@@ -84,6 +82,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="kr.co.fastcampus.cli.res.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kr.co.fastcampus.cli.validation.Main" />
+      <module name="springFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kr.co.fastcampus.cli.validation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,36 +144,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BeanScopeTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fastcampus.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fastcampus" />
-      <option name="MAIN_CLASS_NAME" value="fastcampus.BeanScopeTest" />
-      <option name="METHOD_NAME" value="testEquals" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="JUnit.BeanScopeTest" />
-      <item itemvalue="JUnit.BeanScopeTest.testEquals" />
       <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="JUnit.BeanScopeTest" />
-        <item itemvalue="JUnit.BeanScopeTest.testEquals" />
       </list>
     </recent_temporary>
   </component>
@@ -225,38 +220,38 @@
       <screen x="1792" y="23" width="1920" height="1057" />
     </state>
     <state x="2499" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586701271456" />
-    <state width="1750" height="197" key="GridCell.Tab.0.bottom" timestamp="1590678637237">
+    <state width="1750" height="197" key="GridCell.Tab.0.bottom" timestamp="1590800705798">
       <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="197" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590678637237" />
+    <state width="1750" height="197" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590800705798" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872889" />
     <state width="1878" height="294" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418215" />
     <state width="1750" height="314" key="GridCell.Tab.0.bottom/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650170" />
-    <state width="1750" height="197" key="GridCell.Tab.0.center" timestamp="1590678637236">
+    <state width="1750" height="197" key="GridCell.Tab.0.center" timestamp="1590800705797">
       <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.center/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="197" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590678637236" />
+    <state width="1750" height="197" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590800705797" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872888" />
     <state width="1878" height="294" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418214" />
     <state width="1750" height="314" key="GridCell.Tab.0.center/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650169" />
-    <state width="1750" height="197" key="GridCell.Tab.0.left" timestamp="1590678637236">
+    <state width="1750" height="197" key="GridCell.Tab.0.left" timestamp="1590800705796">
       <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.left/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="197" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590678637236" />
+    <state width="1750" height="197" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590800705796" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872887" />
     <state width="1878" height="294" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146618" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418213" />
     <state width="1750" height="314" key="GridCell.Tab.0.left/1792.23.1920.999/0.23.1792.1097@0.23.1792.1097" timestamp="1586796650168" />
-    <state width="1750" height="197" key="GridCell.Tab.0.right" timestamp="1590678637237">
+    <state width="1750" height="197" key="GridCell.Tab.0.right" timestamp="1590800705797">
       <screen x="0" y="23" width="1792" height="1032" />
     </state>
     <state width="1750" height="314" key="GridCell.Tab.0.right/0.23.1792.1039@0.23.1792.1039" timestamp="1587264879795" />
-    <state width="1750" height="197" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590678637237" />
+    <state width="1750" height="197" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1032@0.23.1792.1032" timestamp="1590800705797" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@0.23.1792.1039" timestamp="1588095872889" />
     <state width="1878" height="294" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1039@1792.23.1920.1057" timestamp="1586702146619" />
     <state width="1750" height="314" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1097@0.23.1792.1097" timestamp="1586796418214" />
