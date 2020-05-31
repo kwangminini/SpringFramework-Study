@@ -11,7 +11,6 @@ public class Main {
         if(validator.supports(person.getClass())){
             BindException error = new BindException(person,"person");
             validator.validate(person, error);
-
             log.error(">>"+error.hasErrors());
             log.error(""+error.getAllErrors());
         }else {

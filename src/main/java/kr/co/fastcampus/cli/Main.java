@@ -1,5 +1,6 @@
 package kr.co.fastcampus.cli;
 
+import kr.co.fastcampus.cli.service.MyService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -16,13 +17,14 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(AppConfig.class,AppDefaultConfig.class,AppDevConfig.class); //Configuration 설정
         context.refresh();
-
+        MyService service = context.getBean(MyService.class);
+        service.check();
         //Dao2 dao2 = context.getBean(Dao2.class);
         //context.scan("kr.co.fastcampus.cli");
         //B b = context.getBean(B.class);
-        Dao b = context.getBean(Dao.class);
+        /*Dao b = context.getBean(Da o.class);
         b.run();
-        log.info(""+b);
+        log.info(""+b);*/
         context.close();
         //dao2.run();
 //        ConnectionFactory factory = context.getBean(ConnectionFactory.class);

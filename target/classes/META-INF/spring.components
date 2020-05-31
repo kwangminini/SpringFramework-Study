@@ -4,5 +4,6 @@ kr.co.fastcampus.cli.AppDefaultConfig=org.springframework.stereotype.Component
 kr.co.fastcampus.cli.AppDevConfig=org.springframework.stereotype.Component
 kr.co.fastcampus.cli.B=org.springframework.stereotype.Component
 kr.co.fastcampus.cli.res.ResourceExample=org.springframework.stereotype.Component
+kr.co.fastcampus.cli.service.MyService=org.springframework.stereotype.Component
 kr.co.fastcampus.web.SimpleFilter=javax.servlet.annotation.WebFilter
 kr.co.fastcampus.web.SimpleServlet=javax.servlet.annotation.WebServlet
