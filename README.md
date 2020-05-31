@@ -19,3 +19,7 @@
 * 2.3 Built-in Resource Implementations
 * 2.4 The ResourceLoader
 * 2.5 The ResourceLoaderAware interface 
+
+# 3.Validation, Data Binding, and Type Conversion
+* 3.1 Validation by Using Spring’s Validator Interface
+* 3.2 Resolving Codes to Error Messages
