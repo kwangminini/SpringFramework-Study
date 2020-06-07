@@ -1,9 +1,10 @@
 package kr.co.fastcampus.cli;
 
-import kr.co.fastcampus.cli.aop.TransactionBean;
+import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -18,10 +19,10 @@ public class Main {
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml");
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml"); //class넣는게 실수를 줄여준다.
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.register(AppConfig.class,AppDefaultConfig.class,AppDevConfig.class); //Configuration 설정
+        context.register(AppConfig.class); //Configuration 설정
         context.register(TransactionBean.class);
         context.refresh();
-        createTable(context.getBean(Connection.class));
+        createTable(context.getBean(DataSource.class).getConnection());
         Dao dao = context.getBean(Dao.class);
         dao.insert();
         dao.print();

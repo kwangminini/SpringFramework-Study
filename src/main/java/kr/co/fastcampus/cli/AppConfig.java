@@ -1,13 +1,18 @@
 package kr.co.fastcampus.cli;
 
-import kr.co.fastcampus.cli.service.MyService;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
-import java.sql.Connection;
+import javax.sql.DataSource;
 
 //import org.springframework.context.annotation.ComponentScan;
 //import org.springframework.context.annotation.Configuration;
@@ -15,10 +20,11 @@ import java.sql.Connection;
 //
 @Configuration
 //@Profile("dev | default")
-@Profile({"dev", "default"})
+//@Profile({"dev", "default"})
 //@ComponentScan(basePackages = "kr.co.fastcampus.cli")
-//@PropertySource("classpath:application-${spring.profiles.active}.properties") 여기에 한번에 설
+@PropertySource("classpath:application.properties") //여기에 한번에 설
 @EnableAspectJAutoProxy
+@EnableTransactionManagement
 public class AppConfig {
 //    @Bean
 //    //@Primary
@@ -41,32 +47,48 @@ public class AppConfig {
 //        return new A(b);
 //    }
 
-    @Bean
-    public Connection connection(ConnectionFactory connectionFactory){
-        return connectionFactory.getConnection();
-    }
+//    @Bean
+//    public Connection connection(ConnectionFactory connectionFactory){
+//        return connectionFactory.getConnection();
+//    }
+
+
+//    @Bean(initMethod = "init", destroyMethod = "destroy")
+//    public ConnectionFactory connectionFactory(
+//            @Value("${jdbc.driver-name}") String driverClass,
+//            @Value("${jdbc.url}") String url,
+//            @Value("${jdbc.username}") String username,
+//            @Value("${jdbc.password}") String password
+//    ){
+//        return new ConnectionFactory(driverClass,url,username,password);
+//    }
 
     @Bean
-    public Dao dao(Connection connection){
-        return new Dao(connection);
-    }
-
-    /*@Bean(initMethod = "init", destroyMethod = "destroy")
-    public ConnectionFactory connectionFactory(
+    public DataSource dataSource(
             @Value("${jdbc.driver-name}") String driverClass,
             @Value("${jdbc.url}") String url,
             @Value("${jdbc.username}") String username,
             @Value("${jdbc.password}") String password
     ){
-        return new ConnectionFactory(driverClass,url,username,password);
-    }*/
+        HikariConfig config = new HikariConfig();
+        config.setDriverClassName(driverClass);
+        config.setJdbcUrl(url);
+        config.setUsername(username);
+        config.setPassword(password );
 
+        return new HikariDataSource(config);
+    }
+
+    @Bean
+    public Dao dao(DataSource dataSource){
+        return new Dao(dataSource);
+    }
+    @Bean
+    public PlatformTransactionManager platformTransactionManager(DataSource dataSource){
+        return new DataSourceTransactionManager(dataSource);
+    }
     @Bean
     public LocalValidatorFactoryBean localValidatorFactoryBean(){
         return new LocalValidatorFactoryBean();
     }
-    @Bean
-    public MyService myService(){
-        return new MyService();
-    }
-}
+ }
