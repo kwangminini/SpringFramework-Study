@@ -23,3 +23,9 @@
 # 3.Validation, Data Binding, and Type Conversion
 * 3.1 Validation by Using Spring’s Validator Interface
 * 3.2 Resolving Codes to Error Messages
+
+# 5.Aspect Oriented Programming with Spring
+* 5.1 AOP Concepts
+* 5.3 AOP Proxies
+* 5.4 @AspectJ support
+* 5.5 Schema-based AOP Support
