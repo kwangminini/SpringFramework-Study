@@ -13,23 +13,15 @@ public class Dao {
         this.connection = connection;
     }
 
-    public void run(){
+    public void insert() throws SQLException {
+        Statement statement = connection.createStatement();
+        statement.executeUpdate("insert into member(username, password) values ('kwangmin1', '1234')");
+
+    }
+    public void print(){
 
         try(
             Statement statement = connection.createStatement();) {
-
-
-            connection.setAutoCommit(false);
-
-            statement.execute("create table member(id int auto_increment, username varchar(255) not null, password varchar(255) not null, primary key(id))");
-
-            try {
-                statement.executeUpdate("insert into member(username, password) values ('kwangmin', '1234')");
-                connection.commit();
-            }catch (SQLException e){
-                connection.rollback();
-            }
-
 
             ResultSet resultSet = statement.executeQuery("select id, username, password from member");
             while (resultSet.next()){

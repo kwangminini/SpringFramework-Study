@@ -3,6 +3,7 @@ package kr.co.fastcampus.cli;
 import kr.co.fastcampus.cli.service.MyService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Profile;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
@@ -17,6 +18,7 @@ import java.sql.Connection;
 @Profile({"dev", "default"})
 //@ComponentScan(basePackages = "kr.co.fastcampus.cli")
 //@PropertySource("classpath:application-${spring.profiles.active}.properties") 여기에 한번에 설
+@EnableAspectJAutoProxy
 public class AppConfig {
 //    @Bean
 //    //@Primary
@@ -30,14 +32,14 @@ public class AppConfig {
 //    public B b2(){
 //        return new B();
 //    }
-    @Bean
-    public B b(){
-        return new B();
-    }
-    @Bean(initMethod = "init",destroyMethod = "destroy")
-    public A a(B b){
-        return new A(b);
-    }
+//    @Bean
+//    public B b(){
+//        return new B();
+//    }
+//    @Bean(initMethod = "init",destroyMethod = "destroy")
+//    public A a(B b){
+//        return new A(b);
+//    }
 
     @Bean
     public Connection connection(ConnectionFactory connectionFactory){
