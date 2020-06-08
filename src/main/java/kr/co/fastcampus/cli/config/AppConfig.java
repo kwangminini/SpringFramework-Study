@@ -1,7 +1,8 @@
-package kr.co.fastcampus.cli;
+package kr.co.fastcampus.cli.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import kr.co.fastcampus.cli.Dao;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
