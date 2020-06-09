@@ -1,5 +1,8 @@
 package kr.co.fastcampus.cli;
 
+import kr.co.fastcampus.cli.config.AppConfig;
+import kr.co.fastcampus.cli.controller.MemberController;
+import kr.co.fastcampus.cli.dao.MemberDao;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -7,6 +10,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Scanner;
 
 @Slf4j
 //@Configuration
@@ -20,14 +24,20 @@ public class Main {
         //ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("dao.xml"); //class넣는게 실수를 줄여준다.
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(AppConfig.class); //Configuration 설정
-        context.register(TransactionBean.class);
         context.refresh();
         createTable(context.getBean(DataSource.class).getConnection());
-        Dao dao = context.getBean(Dao.class);
-        dao.insert();
-        dao.print();
 
+        System.out.println("=================== 사용자의 username, password를 입력해주세요. =====================");
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("username:");
+        String username = scanner.nextLine();
+        System.out.println("password:");
+        String password = scanner.nextLine();
+
+        MemberController controller = context.getBean(MemberController.class);
+        controller.insert(username,password);
+        controller.print();
 
 //        MyService service = context.getBean(MyService.class);
 //        service.check();
