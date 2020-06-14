@@ -32,4 +32,6 @@
 
 # * CLI Refactoring 
 
-# * WEB Refactoring
+# * WEB Refactoring 
+* BootStrap
+* ModelAndView
