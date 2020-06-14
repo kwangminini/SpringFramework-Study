@@ -1,22 +1,29 @@
-package kr.co.fastcampus.cli.dao;
+package kr.co.fastcampus.web.dao;
 
 import kr.co.fastcampus.cli.entity.Member;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import javax.annotation.PostConstruct;
+import java.sql.SQLException;
 import java.util.List;
 
 @Slf4j
 public class MemberDao {
     private JdbcTemplate jdbcTemplate;
 
+    @PostConstruct
+    void init(){
+        jdbcTemplate.update("create table member(id int auto_increment, username varchar(255) not null, password varchar(255) not null, primary key(id))");
+        jdbcTemplate.update("insert into member(username,password) values('kwangmin','1234')");
+    }
     @Autowired
     public MemberDao(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    public void insert(String username, String password)  {
+    public void insert(String username, String password) throws SQLException {
 //        Statement statement = DataSourceUtils.getConnection(dataSource).createStatement();
 //        statement.executeUpdate("insert into member(username, password) values ('kwangmin1', '1234')");
         jdbcTemplate.update("insert into member(username, password) values (?, ?)",username,password);
